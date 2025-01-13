@@ -17,7 +17,7 @@ export default function Home() {
             </p>
             <div className="input-group mb-3">
               <label htmlFor="searchInput" className="visually-hidden">
-                Search for books
+                Search for books 5
               </label>
               <input
                 id="searchInput"
