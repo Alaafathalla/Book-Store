@@ -1,6 +1,6 @@
 import React from 'react';
 import home from '../../assests/layer-slider-model.png';
-
+import book1 from '../../assests/book1.png';
 export default function Home() {
   return (
     <div>
@@ -17,7 +17,7 @@ export default function Home() {
             </p>
             <div className="input-group mb-3">
               <label htmlFor="searchInput" className="visually-hidden">
-                Search for books 5
+                Search for books
               </label>
               <input
                 id="searchInput"
@@ -36,17 +36,56 @@ export default function Home() {
               </button>
             </div>
           </div>
-          
+
           {/* Right Section */}
           <div className="col-md-6 text-center">
             <img
               src={home}
               alt="A large collection of books"
-              className="img-fluid"
+              className="img-fluid w-75"
             />
           </div>
         </div>
       </div>
+      {/* =========================================================== */}
+      <div className="container-fluid">
+        <p>Xtra <span>Book Collection</span></p>
+        <div className="row">
+          <div className="col-md-4">
+            <div>
+              <img src={book1} className='w-75' alt="" />
+            </div>
+          </div>
+          <div className="col-md-8">
+            <div className="row">
+              <div className="col-md-4">
+                <div>
+                  <img src={  book1} className='w-75' alt="" />
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div>
+                  <img src={ book1} className='w-75' alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-8">
+                <div className="div">
+                  <img src={ book1} className='w-50' alt="" />
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div>
+                  <img src={ book1} className='w-75' alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   );
 }

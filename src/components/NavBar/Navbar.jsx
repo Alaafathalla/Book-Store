@@ -1,13 +1,12 @@
 import React from 'react';
-// import logo from '../assets/logo-book-shop.png';
+import logo from '../../assests/logo.png';
 export default function Navbar() {
   return (
     <div className="container-fluid ">
 <nav className="navbar navbar-expand-lg">
   <div className="container">
-        <a className="navbar-brand" href="#">
-      {/* <img src={logo} alt="" srcset="" /> */}
-      LOGO
+        <a className="navbar-brand px-1" href="#">
+      <img src={logo} alt="" srcset="" />
         </a>
 
     {/* Second Row: Links and Buttons */}
