@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from '../../assests/logo.png';
+import './Navbar.css';
 export default function Navbar() {
   return (
     <div className="container-fluid ">
-<nav className="navbar navbar-expand-lg">
+<nav className="navbar navbar-expand-lg bg-gray ">
   <div className="container">
         <a className="navbar-brand px-1" href="#">
       <img src={logo} alt="" srcset="" />

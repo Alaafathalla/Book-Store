@@ -1,0 +1,11 @@
+.home{
+    background-color: rgb(242,240,240);
+}
+.home h1{
+    font-size:70px;
+    line-height:5.5rem;
+}
+.home p{
+    color:#a7a0a0;
+    font-size:27px;
+}

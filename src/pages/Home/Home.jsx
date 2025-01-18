@@ -1,6 +1,7 @@
 import React from 'react';
 import home from '../../assests/layer-slider-model.png';
 import book1 from '../../assests/book1.png';
+import './Home.css';
 export default function Home() {
   return (
     <div>
