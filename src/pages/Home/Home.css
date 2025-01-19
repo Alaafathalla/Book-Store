@@ -9,3 +9,35 @@
     color:#a7a0a0;
     font-size:27px;
 }
+.home .btn {
+   background-color: var(--first-color) ;
+   color: white;
+  }
+  .home .btn:hover {
+background-color: black;
+color: white;
+   }
+  .home span{
+    color: var(--first-color);
+  }
+  /* ================================ */
+  .categoriesp{
+   color: var(--first-color); 
+   font-size: 50px;
+   font-weight: 600;
+  }
+  .bg1{
+    background-color: #075985;
+  }
+  .bg2{
+    background-color: black;
+  }
+  .bg3{
+    background-color: #f97316;
+  }
+  .bg4{
+    background-color: #bae6fd;
+  }
+  .bg5{
+    background-color: #faf5ff;
+  }
