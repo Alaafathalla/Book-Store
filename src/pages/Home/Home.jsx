@@ -5,7 +5,7 @@ import './Home.css';
 export default function Home() {
   return (
     <div>
-      <div className="container-fluid home">
+      <div className="container-fluid home pt-5">
         <div className="row align-items-center">
           {/* Left Section */}
           <div className="col-md-6 p-5">
@@ -51,26 +51,26 @@ export default function Home() {
       </div>
       {/* =========================================================== */}
       <div className="container-fluid categories text-center">
-      <div className="flex justify-center items-center h-screen">
-  <div className="categoriesp rounded-3 bg-gray-200 py-4 px-6">
-    <p className="text-center">Categories</p>
-  </div>
-</div>
-<h2>Xtra <span className='font-black'>Book Collection</span></h2>
-        <div className="row">
-        <div className="col-md-4">
-  <div className="bg1 ">  
-    <img src={book1} className="w-75" alt="" />
-  </div>
-</div>
+        <div className="flex justify-center items-center h-screen">
+          <div className="categoriesp rounded-3 bg-gray-200 py-4 px-6">
+            <p className="text-center">Categories</p>
+          </div>
+        </div>
+        <h2>Xtra <span className='font-black'>Book Collection</span></h2>
+        <div className="row"> 
+          <div className="col-md-4">
+            <div className="bg1 ">
+              <img src={book1} className="w-100 h-100" alt="" />
+            </div>
+          </div>
           <div className="col-md-8">
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-6">
                 <div className='bg2'>
                   <img src={book1} className='w-75' alt="" />
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-6">
                 <div className='bg3'>
                   <img src={book1} className='w-75' alt="" />
                 </div>
