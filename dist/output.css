@@ -1,11 +1,10 @@
-
 body {
   margin: 0;
 }
 
-
 .nav-link {
-  border-radius: 8px; /* Fallback for custom border radius */
+  border-radius: 8px;
+  /* Fallback for custom border radius */
   padding-left: 3px;
   padding-right: 3px;
   margin-left: 3px;

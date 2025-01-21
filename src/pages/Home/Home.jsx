@@ -1,6 +1,10 @@
 import React from 'react';
 import home from '../../assests/layer-slider-model.png';
 import book1 from '../../assests/book1.png';
+import book3 from '../../assests/books3.png';
+import book2 from '../../assests/books2.png';
+import book4 from '../../assests/book4.png';
+import book5 from '../../assests/book5.png';
 import './Home.css';
 export default function Home() {
   return (
@@ -57,34 +61,34 @@ export default function Home() {
           </div>
         </div>
         <h2>Xtra <span className='font-black'>Book Collection</span></h2>
-        <div className="row"> 
+        <div className="row px-16 py-3 "> 
           <div className="col-md-4">
-            <div className="bg1 ">
-              <img src={book1} className="w-100 h-100" alt="" />
+            <div className="bg1 rounded-5">
+              <img src={book1} className="w-75 " alt="" />
             </div>
           </div>
           <div className="col-md-8">
             <div className="row">
               <div className="col-md-6">
-                <div className='bg2'>
-                  <img src={book1} className='w-75' alt="" />
+                <div className='bg2 rounded-5'>
+                  <img src={book3} className='' alt="" />
                 </div>
               </div>
               <div className="col-md-6">
-                <div className='bg3'>
-                  <img src={book1} className='w-75' alt="" />
+                <div className='bg3 rounded-5'>
+                  <img src={book5} className='' alt="" />
                 </div>
               </div>
             </div>
-            <div className="row">
+            <div className="row pt-3">
               <div className="col-md-8">
-                <div className="bg4">
-                  <img src={book1} className='w-50' alt="" />
+                <div className="bg4 rounded-5">
+                  <img src={book2} className='' alt="" />
                 </div>
               </div>
               <div className="col-md-4">
-                <div className='bg5'>
-                  <img src={book1} className='w-75' alt="" />
+                <div className='bg5 rounded-5'>
+                  <img src={book4} className='' alt="" />
                 </div>
               </div>
             </div>
@@ -92,7 +96,10 @@ export default function Home() {
 
         </div>
       </div>
-
+     {/* ===================================================================== */}
+     <div className="container-fluid">
+      
+     </div>
     </div>
   );
 }
