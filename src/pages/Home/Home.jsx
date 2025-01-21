@@ -5,6 +5,7 @@ import book3 from '../../assests/books3.png';
 import book2 from '../../assests/books2.png';
 import book4 from '../../assests/book4.png';
 import book5 from '../../assests/book5.png';
+import book from '../../assests/book-12.jpg';
 import './Home.css';
 export default function Home() {
   return (
@@ -61,7 +62,7 @@ export default function Home() {
           </div>
         </div>
         <h2>Xtra <span className='font-black'>Book Collection</span></h2>
-        <div className="row px-16 py-3 "> 
+        <div className="row p-16  ">
           <div className="col-md-4">
             <div className="bg1 rounded-5">
               <img src={book1} className="w-75 " alt="" />
@@ -96,10 +97,55 @@ export default function Home() {
 
         </div>
       </div>
-     {/* ===================================================================== */}
-     <div className="container-fluid">
-      
-     </div>
+      {/* ===================================================================== */}
+     <div className='bg-light'>
+      <div className="container text-center ">
+        <div className='flex justify-content-center'>
+          <p>Best Sellers</p>
+          <h2>this year's top sellers</h2>
+        </div>
+        <div>
+          <div className="row">
+            <div className="col-6 col-md-3 bg-white rounded-5    ">
+              <img src={book} className='w-75' alt="" />
+              <hr />
+              <h4>title</h4>
+              <div className="d-flex justify-content-between ">
+                <p>*****</p>
+                <p>25$</p>
+              </div>
+            </div>
+            <div className="col-6 col-md-3 bg-white rounded-5    ">
+              <img src={book} className='w-75' alt="" />
+              <hr />
+              <h4>title</h4>
+              <div className="d-flex justify-content-between ">
+                <p>*****</p>
+                <p>25$</p>
+              </div>
+            </div>
+            <div className="col-6 col-md-3 bg-white rounded-5    ">
+              <img src={book} className='w-75' alt="" />
+              <hr />
+              <h4>title</h4>
+              <div className="d-flex justify-content-between ">
+                <p>*****</p>
+                <p>25$</p>
+              </div>
+            </div>
+            <div className="col-6 col-md-3 bg-white rounded-5    ">
+              <img src={book} className='w-75' alt="" />
+              <hr />
+              <h4>title</h4>
+              <div className="d-flex justify-content-between ">
+                <p>*****</p>
+                <p>25$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   );
 }
