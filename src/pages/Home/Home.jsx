@@ -57,8 +57,13 @@ export default function Home() {
       {/* =========================================================== */}
       <div className="container-fluid categories text-center">
         <div className="flex justify-center items-center h-screen">
-          <div className="categoriesp rounded-3 bg-gray-200 py-4 px-6">
+          {/* <div className="categoriesp rounded-3 bg-gray-200 py-4 px-6">
             <p className="text-center">Categories</p>
+          </div> */}
+          <div
+            className="bg-info text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }}
+          >
+            <p className="mb-0">Categories</p>
           </div>
         </div>
         <h2>Xtra <span className='font-black'>Book Collection</span></h2>
@@ -98,53 +103,88 @@ export default function Home() {
         </div>
       </div>
       {/* ===================================================================== */}
-     <div className='bg-light'>
-      <div className="container text-center ">
-        <div className='flex justify-content-center'>
-          <p>Best Sellers</p>
-          <h2>this year's top sellers</h2>
-        </div>
-        <div>
-          <div className="row">
-            <div className="col-6 col-md-3 bg-white rounded-5    ">
-              <img src={book} className='w-75' alt="" />
-              <hr />
-              <h4>title</h4>
-              <div className="d-flex justify-content-between ">
-                <p>*****</p>
-                <p>25$</p>
-              </div>
+      <div className='bg-light'>
+        <div className="container text-center pt-3 ">
+          <div className='flex justify-content-center'>
+            <div
+              className="bg-info text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }}
+            >
+              <p className="mb-0">Best Seller</p>
             </div>
-            <div className="col-6 col-md-3 bg-white rounded-5    ">
-              <img src={book} className='w-75' alt="" />
-              <hr />
-              <h4>title</h4>
-              <div className="d-flex justify-content-between ">
-                <p>*****</p>
-                <p>25$</p>
+            <h2>this year's top sellers</h2>
+          </div>
+          <div>
+            <div className="row g-4">
+              <div className="col-6 col-md-3">
+                <div className="mx-3 bg-white rounded-5">
+                  <img src={book} className="w-75" alt="" />
+                  <hr />
+                  <h4>title</h4>
+                  <div className="d-flex justify-content-between px-5">
+                    <p>*****</p>
+                    <p>25$</p>
+                  </div>
+                </div>
+                <div
+                  className="bg-info text-white text-center w-50 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"
+                >
+                  <p className="mb-0">Add to cart</p>
+                </div>
+
+              </div>  <div className="col-6 col-md-3">
+                <div className="mx-3 bg-white rounded-5">
+                  <img src={book} className="w-75" alt="" />
+                  <hr />
+                  <h4>title</h4>
+                  <div className="d-flex justify-content-between px-5">
+                    <p>*****</p>
+                    <p>25$</p>
+                  </div>
+                </div>
+                <div
+                  className="bg-info text-white text-center w-50 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"
+                >
+                  <p className="mb-0">Add to cart</p>
+                </div>
+
+              </div>  <div className="col-6 col-md-3">
+                <div className="mx-3 bg-white rounded-5">
+                  <img src={book} className="w-75" alt="" />
+                  <hr />
+                  <h4>title</h4>
+                  <div className="d-flex justify-content-between px-5">
+                    <p>*****</p>
+                    <p>25$</p>
+                  </div>
+                </div>
+                <div
+                  className="bg-info text-white text-center w-50 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"
+                >
+                  <p className="mb-0">Add to cart</p>
+                </div>
+
               </div>
-            </div>
-            <div className="col-6 col-md-3 bg-white rounded-5    ">
-              <img src={book} className='w-75' alt="" />
-              <hr />
-              <h4>title</h4>
-              <div className="d-flex justify-content-between ">
-                <p>*****</p>
-                <p>25$</p>
+              <div className="col-6 col-md-3">
+                <div className="mx-3 bg-white rounded-5">
+                  <img src={book} className="w-75" alt="" />
+                  <hr />
+                  <h4>title</h4>
+                  <div className="d-flex justify-content-between px-5">
+                    <p>*****</p>
+                    <p>25$</p>
+                  </div>
+                </div>
+                <div
+                  className="bg-info text-white text-center w-50 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"
+                >
+                  <p className="mb-0">Add to cart</p>
+                </div>
+
               </div>
-            </div>
-            <div className="col-6 col-md-3 bg-white rounded-5    ">
-              <img src={book} className='w-75' alt="" />
-              <hr />
-              <h4>title</h4>
-              <div className="d-flex justify-content-between ">
-                <p>*****</p>
-                <p>25$</p>
-              </div>
+
             </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   );
