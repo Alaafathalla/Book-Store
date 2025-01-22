@@ -14,6 +14,13 @@ body {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+.slider-container {
+    width: 80%;
+    margin: auto;
+  }
+  
+ 
+  
 
 
 
