@@ -6,7 +6,8 @@ import book2 from '../../assests/books2.png';
 import book4 from '../../assests/book4.png';
 import book5 from '../../assests/book5.png';
 import book from '../../assests/book-12.jpg';
-import "slick-carousel/slick/slick.css"; 
+import team1 from '../../assests/team-member-1.jpg';
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import './Home.css';
@@ -197,7 +198,7 @@ export default function Home() {
               </div>
 
             </div>
-            <div className="bg-info text-white text-center mt-5 py-2  rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px", marginBottom:"20px" }} >
+            <div className="bg-info text-white text-center mt-5 py-2  rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px", marginBottom: "20px" }} >
               <p className="mb-0">View full list</p>
             </div>
           </div>
@@ -205,31 +206,81 @@ export default function Home() {
       </div>
       {/* =========================================================================== */}
       <div className="container">
-      <div className="bg-info text-white text-center mt-5 mb-3 py-2  rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }} >
-         <p className="mb-0">Testimonials</p>
-      </div>
-      <h1 className='text-center mb-3'style={{fontWeight:'700',fontSize:'50px'}}>What Customer Say..</h1>
+        <div className="bg-info text-white text-center mt-5 mb-3 py-2  rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }} >
+          <p className="mb-0">Testimonials</p>
+        </div>
+        <h1 className='text-center mb-3' style={{ fontWeight: '700', fontSize: '50px' }}>What Customer Say..</h1>
 
-      <div className="slider-container">
-      <Slider {...settings}>
-        {cards.map((card, index) => (
-          <div key={card.id} className="card-wrapper">
-            <div
-              className={`card ${
-                index === 0 || index === cards.length - 1 ? "disabled-card" : ""
-              }`}
-            >
-              <h4>{card.title}</h4>
-              <p>{card.content}</p>
-            </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
+        <div className="slider-container">
+          <Slider {...settings}>
+            {cards.map((card, index) => (
+              <div key={card.id} className="card-wrapper">
+                <div
+                  className={`card ${index === 0 || index === cards.length - 1 ? "disabled-card" : ""
+                    }`}
+                >
+                  <h4>{card.title}</h4>
+                  <p>{card.content}</p>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
       {/* ========================================================================== */}
-      
+      <div className="container text-white bg-dark-subtle  p-5 rounded-5 mt-5 ">
+        <div className="bg-info text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }} >
+          <p className="mb-0">Special offers</p>
+        </div>
+        <div className='text-center'>
+          <h1 className=''>Get %20 off for your first order!</h1>
+          <p>An online book is a resource in book-like form that is only available to read on the Internet.It differs from the common idea of an e-book.</p>
+          <div className="bg-white text-info text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }} >
+            <p className="mb-0">purechase now</p>
+          </div>
+        </div>
+      </div>
+
+      {/* ============================================================================= */}
+      <div className="bg-info text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }} >
+        <p className="mb-0">Authers</p>
+      </div>
+      <h1 className='text-center mb-3' style={{ fontWeight: '700', fontSize: '50px' }}>Most Popular Authors</h1>
+      <div className="container">
+      <div className="row g-4">
+  <div className="col-6 col-md-3 text-center">
+    <div className="mx-3 bg-white p-4 rounded-5">
+      <img src={team1} className="w-100 mb-3" style={{ borderRadius: '50%' }} alt="" />
+      <h3>Name</h3>
+      <p>Title</p>
     </div>
+  </div>
+  <div className="col-6 col-md-3 text-center">
+    <div className="mx-3 bg-white p-4 rounded-5">
+      <img src={team1} className="w-100 mb-3" style={{ borderRadius: '50%' }} alt="" />
+      <h3>Name</h3>
+      <p>Title</p>
+    </div>
+  </div>
+  <div className="col-6 col-md-3 text-center">
+    <div className="mx-3 bg-white p-4 rounded-5">
+      <img src={team1} className="w-100 mb-3" style={{ borderRadius: '50%' }} alt="" />
+      <h3>Name</h3>
+      <p>Title</p>
+    </div>
+  </div>
+  <div className="col-6 col-md-3 text-center">
+    <div className="mx-3 bg-white p-4 rounded-5">
+      <img src={team1} className="w-100 mb-3" style={{ borderRadius: '50%' }} alt="" />
+      <h3>Name</h3>
+      <p>Title</p>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+
   );
 }
 
