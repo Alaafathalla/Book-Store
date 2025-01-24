@@ -78,47 +78,59 @@ export default function Home() {
       </div>
       {/* =========================================================== */}
       <div className="container-fluid categories text-center">
-        <div className="flex justify-center items-center h-screen">
-          <div className="bg-info text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }}>
-            <p className="mb-0">Categories</p>
-          </div>
-        </div>
-        <h2>Xtra <span className='font-black'>Book Collection</span></h2>
-        <div className="row p-16  ">
-          <div className="col-md-4">
-            <div className="bg1 rounded-5">
-              <img src={book1} className="w-75 " alt="" />
-            </div>
-          </div>
-          <div className="col-md-8">
-            <div className="row">
-              <div className="col-md-6">
-                <div className='bg2 rounded-5'>
-                  <img src={book3} className='' alt="" />
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className='bg3 rounded-5'>
-                  <img src={book5} className='' alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="row pt-3">
-              <div className="col-md-8">
-                <div className="bg4 rounded-5">
-                  <img src={book2} className='' alt="" />
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className='bg5 rounded-5'>
-                  <img src={book4} className='' alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-
+<div className='px-5'>
+<div className="flex justify-center items-center min-h-screen">
+    <div
+      className="bg-info text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"
+      style={{ width: "200px" }}
+    >
+      <p className="mb-0">Categories</p>
+    </div>
+  </div>
+  <h2>
+    Xtra <span className="font-black">Book Collection</span>
+  </h2>
+  <div style={{ padding: "50px" }}>
+    <div className="row gy-4 d-flex align-items-stretch">
+      {/* First Column */}
+      <div className="col-12 col-md-4 d-flex align-items-stretch">
+        <div className="bg1 rounded-5 d-flex align-items-center justify-content-center w-100">
+          <img src={book1} className="w-75" alt="Book 1" />
         </div>
       </div>
+
+      {/* Second Column */}
+      <div className="col-12 col-md-8 d-flex flex-column justify-content-between">
+        <div className="row gy-3">
+          <div className="col-6 d-flex align-items-stretch">
+            <div className="bg2 rounded-5 d-flex align-items-center justify-content-center w-100">
+              <img src={book3} className="w-100" alt="Book 3" />
+            </div>
+          </div>
+          <div className="col-6 d-flex align-items-stretch">
+            <div className="bg3 rounded-5 d-flex align-items-center justify-content-center w-100">
+              <img src={book5} className="w-100" alt="Book 5" />
+            </div>
+          </div>
+        </div>
+        <div className="row gy-3 pt-3">
+          <div className="col-12 col-md-8 d-flex align-items-stretch">
+            <div className="bg4 rounded-5 d-flex align-items-center justify-content-center w-100">
+              <img src={book2} className="w-100" alt="Book 2" />
+            </div>
+          </div>
+          <div className="col-12 col-md-4 d-flex align-items-stretch">
+            <div className="bg5 rounded-5 d-flex align-items-center justify-content-center w-100">
+              <img src={book4} className="w-100" alt="Book 4" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
       {/* ===================================================================== */}
       <div className='bg-light'>
         <div className="container text-center pt-3 ">
