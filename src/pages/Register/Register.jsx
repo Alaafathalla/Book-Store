@@ -18,9 +18,10 @@ export default function Register() {
     }),
     onSubmit: (values) => {
       console.log('Form Data:', values);
-      alert('Registration Successful!');
+
     },
   });
+
 
   return (
     <div className="d-flex justify-content-center align-items-center py-5">

@@ -18,9 +18,8 @@ export default function Login() {
         .required('Password is required'),
     }),
     onSubmit: (values) => {
-      // Handle form submission
       console.log('Form submitted:', values);
-      alert(`Logged in with email: ${values.email}`);
+      // alert(`Logged in with email: ${values.email}`);
     },
   });
 
@@ -29,9 +28,7 @@ export default function Login() {
       <div className="w-25 p-5 border rounded shadow">
         <h3 className="text-center mb-4">Login to website</h3>
 
-        {/* Formik Form */}
         <form onSubmit={formik.handleSubmit}>
-          {/* Email Input */}
           <div className="mb-3">
             <label htmlFor="email" className="form-label">Email address</label>
             <input
