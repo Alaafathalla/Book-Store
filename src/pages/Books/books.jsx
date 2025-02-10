@@ -72,7 +72,7 @@ export default function About() {
   return (
     <div>
       <div className="bg-light rounded-5 py-5 mb-5 text-center">
-        <h2 className="fw-bold">Google Books</h2>
+        <h2 className="fw-bold text-shadow-black">ALL BOOKS</h2>
       </div>
 
       <div className="container">
