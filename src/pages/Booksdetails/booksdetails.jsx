@@ -19,14 +19,14 @@ export default function BookDetails() {
     fetchBookDetails();
   }, [id]);
 
-  if (!book) return <p>Loading...</p>;
+  if (!book) return <h5>Loading...</h5>;
 
   return (
     <div className="container mt-5">
-      <h2>{book.volumeInfo.title}</h2>
-      <p><strong>Author:</strong> {book.volumeInfo.authors?.join(', ') || 'Unknown'}</p>
-      <img src={book.volumeInfo.imageLinks?.thumbnail || 'https://via.placeholder.com/150'} alt={book.volumeInfo.title} />
-      <p><strong>Description:</strong> {book.volumeInfo.description || 'No description available'}</p>
+      <h1 className='py-4 text-center'style={{color:'#4296eb'}}>{book.volumeInfo.title}</h1>
+      <h5 className='mt-1'><strong style={{color:'blue'}}>Author:</strong> {book.volumeInfo.authors?.join(', ') || 'Unknown'}</h5>
+      <img className='w-25 h-50 my-3 rounded-4' src={book.volumeInfo.imageLinks?.thumbnail || 'https://via.placeholder.com/150'} alt={book.volumeInfo.title} />
+      <h5 className='mt-2' style={{lineHeight:'35px'}}><strong style={{color:'blue'}}>Description:</strong> {book.volumeInfo.description || 'No description available'}</h5>
     </div>
   );
 }

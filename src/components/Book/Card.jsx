@@ -16,7 +16,6 @@ export default function Card({ id, title, author, image, price, rating }) {
         <p className="card-text"><strong>Price:</strong> {price}</p>
         <p className="card-text"><strong>Rating:</strong> {rating}</p>
 
-        {/* View Details Button */}
         <Link to={`/books/${id}`} className="btn btn-primary mt-auto w-100">
           View Details
         </Link>
