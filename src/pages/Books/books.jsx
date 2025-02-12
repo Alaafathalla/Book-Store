@@ -22,7 +22,7 @@ export default function About() {
           return [];
         }
       });
-
+      
       const results = await Promise.all(categoryPromises);
       const allBooks = results.flat(); // Merge all book arrays into one
       setBooks(allBooks);

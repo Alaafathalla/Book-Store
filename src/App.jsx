@@ -7,6 +7,7 @@ import Books from '../src/pages/Books/books';
 import Login from '../src/pages/Login/Login';
 import Masterlayout from '../src/MasterLayout/MasterLayout'; 
 import Register from './pages/Register/Register';
+import Notfound from './pages/Notfound/notfound';
 import Bookdetails from './pages/Booksdetails/booksdetails';
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
     {
       path: '/',
       element: <Masterlayout  />,
+      errorElement: <Notfound />,
       children: [
         { path: '/', element: <Home /> },
         { path: 'home', element: <Home /> },
