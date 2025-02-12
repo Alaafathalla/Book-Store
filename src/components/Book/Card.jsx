@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Card({ title, author, image, price, rating }) {
+export default function Card({ id, title, author, image, price, rating }) {
   return (
-    <div className="card  shadow-sm">
+    <div className="card shadow-sm">
       <img
         src={image}
         alt={title}
@@ -14,11 +15,16 @@ export default function Card({ title, author, image, price, rating }) {
         <p className="card-text text-muted"><strong>Author:</strong> {author}</p>
         <p className="card-text"><strong>Price:</strong> {price}</p>
         <p className="card-text"><strong>Rating:</strong> {rating}</p>
-        <button className="btn btn-primary mt-auto w-100">View Details</button>
+
+        {/* View Details Button */}
+        <Link to={`/books/${id}`} className="btn btn-primary mt-auto w-100">
+          View Details
+        </Link>
       </div>
     </div>
   );
 }
+
 
 
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Card from '../../components/Book/Card';
 
+
 export default function About() {
   const categories = ['fiction', 'romance', 'drama', 'mystery', 'fantasy', 'horror', 'science'];
   const [books, setBooks] = useState([]);
@@ -84,12 +85,14 @@ export default function About() {
             return (
               <div key={book.id} className="col-12 col-md-6 col-lg-4 mb-4">
                 <Card
-                  title={volumeInfo.title}
-                  author={volumeInfo.authors?.join(', ') || 'Unknown Author'}
-                  image={volumeInfo.imageLinks?.thumbnail || 'https://via.placeholder.com/150'}
-                  price={saleInfo?.listPrice?.amount ? `$${saleInfo.listPrice.amount}` : 'Not for sale'}
-                  rating={volumeInfo.averageRating ? `${volumeInfo.averageRating} ⭐` : 'No Rating'}
-                />
+  id={book.id} 
+  title={volumeInfo.title}
+  author={volumeInfo.authors?.join(', ') || 'Unknown Author'}
+  image={volumeInfo.imageLinks?.thumbnail || 'https://via.placeholder.com/150'}
+  price={saleInfo?.listPrice?.amount ? `$${saleInfo.listPrice.amount}` : 'Not for sale'}
+  rating={volumeInfo.averageRating ? `${volumeInfo.averageRating} ⭐` : 'No Rating'}
+/>
+
               </div>
             );
           })}
