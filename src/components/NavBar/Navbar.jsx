@@ -39,7 +39,12 @@ export default function Navbar() {
                   Books
                 </Link>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">
+                 About
+                </Link>
+              </li>
+              {/* <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle"
                   to="#"
@@ -56,7 +61,7 @@ export default function Navbar() {
                   <li><Link className="dropdown-item" to="/collection/sci-fi">Sci-Fi</Link></li>
                   <li><Link className="dropdown-item" to="/collection/romance">Romance</Link></li>
                 </ul>
-              </li>
+              </li> */}
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle"

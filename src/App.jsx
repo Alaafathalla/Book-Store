@@ -8,6 +8,7 @@ import Login from '../src/pages/Login/Login';
 import Masterlayout from '../src/MasterLayout/MasterLayout'; 
 import Register from './pages/Register/Register';
 import Notfound from './pages/Notfound/notfound';
+import About from './pages/About/about';
 import Bookdetails from './pages/Booksdetails/booksdetails';
 
 export default function App() {
@@ -21,10 +22,12 @@ export default function App() {
         { path: '/', element: <Home /> },
         { path: 'home', element: <Home /> },
         { path: 'contact', element: <Contact/> },
+        { path: 'about', element: <About/> },
         { path: 'books', element: <Books/> },
         { path: 'login', element: <Login/> },
         { path: 'register', element: <Register/> },
         { path: 'books/:id', element: <Bookdetails/> },
+
       ],
     },
   ]);
