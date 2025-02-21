@@ -1,7 +1,12 @@
 import React from 'react'
 import IMG from '../../assests/p7.jpg';
 import { FcRight } from "react-icons/fc";
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
 export default function about() {
+  const particlesInit = async (engine) => {
+    await loadSlim(engine); 
+  };
   return (
     <div>
 <div className="container">
@@ -45,7 +50,46 @@ export default function about() {
         </div>
     </div>
 </div>
+{/* ============================ */}
+
+{/* <div className="container-fluid p-0 m-0">
+  <div
+    className="w-100 d-flex flex-column justify-content-center align-items-center text-white text-center"
+    style={{ height: '40vh', background: 'blue' }}
+  >
+    <h1>The independent bookshop, traditional values</h1>
+    <p className='py-4'>We Lose Ourselves in Books, We Find Ourselves There, Too</p>
+  </div>
+</div> */}
+
+<div className="container-fluid p-0 m-0 position-relative">
+      {/* Particles Background */}
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        options={{
+          fullScreen: { enable: false }, // Ensures it stays inside div
+          particles: {
+            number: { value: 100 },
+            size: { value: 3 },
+            color: { value: "blue" },
+            move: { speed: 5 },
+            links: { enable: true, color: "#ffffff" },
+          },
+          background: { color: "blue" },
+        }}
+        className="position-absolute top-0 start-0 w-100 h-100"
+      />
+
+      {/* Centered Text */}
+      <div
+        className="w-100 d-flex flex-column justify-content-center bg-black align-items-center text-white text-center position-relative"
+        style={{ height: "40vh" }}
+      >
+        <h1>The independent bookshop, traditional values</h1>
+        <p>We Lose Ourselves in Books, We Find Ourselves There, Too</p>
+      </div>
+    </div>
 
     </div>
-  )
-}
+  )}
