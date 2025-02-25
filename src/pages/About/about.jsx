@@ -80,7 +80,7 @@ export default function about() {
                 },
                 links: {
                   enable: true,
-                  color: "#ffffff",
+                  color: "#f4f4f5",
                   distance: 100
                 }
               },
