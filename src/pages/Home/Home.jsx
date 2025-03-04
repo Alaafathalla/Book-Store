@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import './Home.css';
+import { rule } from 'postcss';
 
 export default function Home() {
   const settings = {
@@ -19,6 +20,9 @@ export default function Home() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,  // Enable autoplay
+    autoplaySpeed: 2000, // Adjust autoplay speed (2 seconds)
+    arrows: true, // Show arrows
     responsive: [
       {
         breakpoint: 768, // For tablets
@@ -37,14 +41,14 @@ export default function Home() {
     ],
   };
   
+  
 
   const cards = [
-    { id: 1, title: "Card 1", content: "Content for Card 1" },
-    { id: 2, title: "Card 2", content: "Content for Card 2" },
-    { id: 3, title: "Card 3", content: "Content for Card 3" },
-    { id: 4, title: "Card 4", content: "Content for Card 4" },
-    { id: 5, title: "Card 5", content: "Content for Card 5" },
-    { id: 6, title: "Card 6", content: "Content for Card 6" },
+    { id: 1, title: "Daniel Roosy", content: "The very best. Really good. I wish I would have thought of it first. I couldn't have asked for more than this." ,rule:'Businessman' },
+    { id: 2, title: "Sarah Green", content: "The very best. Really good. I wish I would have thought of it first. I couldn't have asked for more than this." ,rule:'Teacher'},
+    { id: 3, title: "Stephan More ", content: "The very best. Really good. I wish I would have thought of it first. I couldn't have asked for more than this." ,rule:'Technician'},
+    { id: 4, title: "Rose Johnson", content: "The very best. Really good. I wish I would have thought of it first. I couldn't have asked for more than this." ,rule:'Businessman' },
+      { id: 5, title: "Stephan More", content: "The very best. Really good. I wish I would have thought of it first. I couldn't have asked for more than this." ,rule:'Doctor' },
   ];
   return (
     <div>
@@ -233,7 +237,7 @@ export default function Home() {
         </div>
       </div>
       {/* =========================================================================== */}
-      <div className="container">
+      <div className="container ">
         <div className="bg-info text-white text-center mt-5 mb-3 py-2  rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }} >
           <p className="mb-0">Testimonials</p>
         </div>
@@ -243,13 +247,17 @@ export default function Home() {
           <Slider {...settings}>
             {cards.map((card, index) => (
               <div key={card.id} className="card-wrapper">
-                <div
-                  className={`card ${index === 0 || index === cards.length - 1 ? "disabled-card" : ""
-                    }`}
-                >
-                  <h4>{card.title}</h4>
-                  <p>{card.content}</p>
-                </div>
+<div
+  className={`card bg-white shadow p-4  rounded-3 ${index === 0 || index === cards.length - 1 ? "disabled-card" : ""}`}
+>
+  <p>{card.content}</p>
+  <div className="d-flex align-items-center justify-content-center gap-2">
+    <h4 className="mb-0 " style={{color:'#4784d4'}}>{card.title}</h4> 
+    <p className="mb-0 ">{card.rule}</p>
+  </div>
+</div>
+
+
               </div>
             ))}
           </Slider>
