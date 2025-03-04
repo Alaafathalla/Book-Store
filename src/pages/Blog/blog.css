@@ -1,0 +1,47 @@
+.custom-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .custom-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  .card-text {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .read-more-btn {
+    background: #eef2ff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #6a5acd;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .read-more-btn .icon {
+    font-size: 18px;
+  }
+  
