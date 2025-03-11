@@ -78,6 +78,12 @@ color: white;
     z-index: 1;
     border-radius: 10px;
   }
+  @media (max-width: 900px) {
+    .label1{
+      font-size: 50px !important;
+      line-height: 3.5rem !important;
+    }
+  }
   @media (max-width: 768px) {
     .card2 {
       padding: 1rem;
@@ -90,5 +96,6 @@ color: white;
     .card2 p {
       font-size: 0.9rem;
     }
+
   }
   

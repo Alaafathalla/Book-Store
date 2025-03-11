@@ -27,7 +27,7 @@ export default function Home() {
       {
         breakpoint: 768, // For tablets
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -56,7 +56,7 @@ export default function Home() {
         <div className="row align-items-center">
           {/* Left Section */}
           <div className="col-md-6 p-5">
-            <h1>
+            <h1 className='label1' >
               Huge collection <br />
               of <span >Best Books</span>
             </h1>
@@ -152,8 +152,8 @@ export default function Home() {
 </div>
 
       {/* ===================================================================== */}
-      <div className='bg-light'>
-        <div className="container text-center pt-3 ">
+      <div className='bg-light  pb-5'>
+        <div className="container text-center pt-3  ">
           <div className='flex justify-content-center'>
             <div className="bg-info text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }} >
               <p className="mb-0">Best Seller</p>
@@ -230,7 +230,7 @@ export default function Home() {
               </div>
 
             </div>
-            <div className="bg-info text-white text-center mt-5 py-2  rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px", marginBottom: "20px" }} >
+            <div className="bg-info text-white text-center mt-5  py-2  rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px", marginBottom: "20px" }} >
               <p className="mb-0">View full list</p>
             </div>
           </div>
@@ -247,7 +247,7 @@ export default function Home() {
           <Slider {...settings}>
             {cards.map((card, index) => (
               <div key={card.id} className="card-wrapper">
-<div className={`card2 bg-white shadow p-4 rounded-3 ${index === 0 || index === cards.length - 1 ? "disabled-card" : ""} d-flex flex-column align-items-center text-center`} style={{ maxWidth: '100%' }}>
+<div className={`card2 bg-white shadow mx-2 p-4 rounded-3 ${index === 0 || index === cards.length - 1 ? "disabled-card" : ""} d-flex flex-column align-items-center text-center`} style={{ maxWidth: '100%' }}>
   <p className="text-muted">{card.content}</p>
   
   <div className="d-flex align-items-center justify-content-center gap-2 flex-wrap">
