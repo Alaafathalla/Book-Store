@@ -247,15 +247,15 @@ export default function Home() {
           <Slider {...settings}>
             {cards.map((card, index) => (
               <div key={card.id} className="card-wrapper">
-<div
-  className={`card bg-white shadow p-4  rounded-3 ${index === 0 || index === cards.length - 1 ? "disabled-card" : ""}`}
->
-  <p>{card.content}</p>
-  <div className="d-flex align-items-center justify-content-center gap-2">
-    <h4 className="mb-0 " style={{color:'#4784d4'}}>{card.title}</h4> 
-    <p className="mb-0 ">{card.rule}</p>
+<div className={`card bg-white shadow p-4 rounded-3 ${index === 0 || index === cards.length - 1 ? "disabled-card" : ""} d-flex flex-column align-items-center text-center`} style={{ maxWidth: '100%' }}>
+  <p className="text-muted">{card.content}</p>
+  
+  <div className="d-flex align-items-center justify-content-center gap-2 flex-wrap">
+    <h4 className="mb-0" style={{ color: '#4784d4', fontSize: '1.2rem' }}>{card.title}</h4>
+    <p className="mb-0" style={{ fontSize: '1rem' }}>{card.rule}</p>
   </div>
 </div>
+
 
 
               </div>

@@ -49,7 +49,7 @@ export default function Contact() {
             >
               <h3 className="font-bold mb-5" style={{ fontSize: "45px" }}>Get in touch with us</h3>
               <div className="row mb-4">
-                <InputField id="name" label="Name" type="text" className='p-2' placeholder="Your Name" formik={formik} />
+                <InputField id="name" label="Name" type="text" className=' p-2' placeholder="Your Name" formik={formik} />
                 <InputField id="email" label="Email" type="email" className='p-2' placeholder="Your Email" formik={formik} />
               </div>
               <div className="row mb-3">
