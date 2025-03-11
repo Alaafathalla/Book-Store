@@ -78,4 +78,17 @@ color: white;
     z-index: 1;
     border-radius: 10px;
   }
+  @media (max-width: 768px) {
+    .card2 {
+      padding: 1rem;
+    }
+  
+    .card2 h4 {
+      font-size: 1rem;
+    }
+  
+    .card2 p {
+      font-size: 0.9rem;
+    }
+  }
   
