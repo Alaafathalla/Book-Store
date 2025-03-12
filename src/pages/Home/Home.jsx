@@ -101,7 +101,7 @@ export default function Home() {
 <div className='px-5'>
 <div className="flex justify-center items-center min-h-screen">
     <div
-      className="bg-info text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"
+      className=" text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"style={{background:'#4784d4'}}
       style={{ width: "200px" }}
     >
       <p className="mb-0">Categories</p>
@@ -155,7 +155,7 @@ export default function Home() {
       <div className='bg-light  pb-5'>
         <div className="container text-center pt-3  ">
           <div className='flex justify-content-center'>
-            <div className="bg-info text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }} >
+            <div className=" text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px"  ,background:'#4784d4'}} >
               <p className="mb-0">Best Seller</p>
             </div>
             <h2>this year's top sellers</h2>
@@ -173,7 +173,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div
-                  className="bg-info text-white text-center w-50 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"
+                  className=" text-white text-center w-50 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center" style={{background:'#4784d4'}}
                 >
                   <p className="mb-0">Add to cart</p>
                 </div>
@@ -189,7 +189,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div
-                  className="bg-info text-white text-center w-50 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"
+                  className=" text-white text-center w-50 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center" style={{background:'#4784d4'}}
                 >
                   <p className="mb-0">Add to cart</p>
                 </div>
@@ -205,7 +205,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div
-                  className="bg-info text-white text-center w-50 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"
+                  className=" text-white text-center w-50 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center" style={{background:'#4784d4'}}
                 >
                   <p className="mb-0">Add to cart</p>
                 </div>
@@ -222,7 +222,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div
-                  className="bg-info text-white text-center w-50 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"
+                  className=" text-white text-center w-50 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center" style={{background:'#4784d4'}}
                 >
                   <p className="mb-0">Add to cart</p>
                 </div>
@@ -230,7 +230,7 @@ export default function Home() {
               </div>
 
             </div>
-            <div className="bg-info text-white text-center mt-5  py-2  rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px", marginBottom: "20px" }} >
+            <div className=" text-white text-center mt-5  py-2  rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px", marginBottom: "20px",background:'#4784d4' }} >
               <p className="mb-0">View full list</p>
             </div>
           </div>
@@ -238,7 +238,7 @@ export default function Home() {
       </div>
       {/* =========================================================================== */}
       <div className="container ">
-        <div className="bg-info text-white text-center mt-5 mb-3 py-2  rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }} >
+        <div className=" text-white text-center mt-5 mb-3 py-2  rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px"  ,background:'#4784d4'}} >
           <p className="mb-0">Testimonials</p>
         </div>
         <h1 className='text-center mb-3' style={{ fontWeight: '700', fontSize: '50px' }}>What Customer Say..</h1>
@@ -265,7 +265,7 @@ export default function Home() {
       </div>
       {/* ========================================================================== */}
       <div className="container text-white bg-dark-subtle  p-5 rounded-5 mt-5 ">
-        <div className="bg-info text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }} >
+        <div className=" text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" ,background:'#4784d4'}} >
           <p className="mb-0">Special offers</p>
         </div>
         <div className='text-center'>
@@ -278,7 +278,7 @@ export default function Home() {
       </div>
 
       {/* ============================================================================= */}
-      <div className="bg-info text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" }} >
+      <div className=" text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center " style={{ width: "200px" ,background:'#4784d4'}}  >
         <p className="mb-0">Authers</p>
       </div>
       <h1 className='text-center mb-3' style={{ fontWeight: '700', fontSize: '50px' }}>Most Popular Authors</h1>
