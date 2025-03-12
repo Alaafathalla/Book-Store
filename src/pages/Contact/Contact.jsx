@@ -45,8 +45,8 @@ export default function Contact() {
     <div className="col-12 col-md-6">
       <form
         onSubmit={formik.handleSubmit}
-        className="p-3 p-md-5 rounded shadow bg-primary text-white"
-        style={{ minHeight: "700px" }}
+        className="p-3 p-md-5 rounded shadow  text-white"
+        style={{ minHeight: "700px" ,background:'#4784d4'}}
       >
         <h3 className="font-bold mb-5" style={{ fontSize: "45px" }}>
           Get in touch with us

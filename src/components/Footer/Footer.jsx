@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container p-5 rounded-5">
         {/* Subscription Section */}
         <div className="text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"
-          style={{ width: "200px", background: "#5e83a8" }}>
+          style={{ width: "200px", background: "#4784d4" }}>
           <p className="mb-0">Get Discounts</p>
         </div>
 
