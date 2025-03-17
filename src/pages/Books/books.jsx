@@ -115,7 +115,7 @@ export default function About() {
               ) : (
                 <button
                   key={index}
-                  className={`btn mx-1 ${page === currentPage ? 'btn-primary' : 'btn-outline-primary'}`}
+                  className={`btn mx-1 ${page === currentPage ? 'btn-primary' : 'btn-outline-primary'} `}
                   onClick={() => setCurrentPage(page)}
                 >
                   {page}

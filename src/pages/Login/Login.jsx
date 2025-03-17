@@ -64,7 +64,7 @@ export default function Login() {
 
           {/* Login Button */}
           <div className="d-grid">
-            <button type="submit" className="btn btn-primary rounded-pill">
+            <button type="submit" className="btn  rounded-pill" style={{background:'#4784d4'}}>
               Login
             </button>
           </div>

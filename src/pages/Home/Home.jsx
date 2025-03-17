@@ -101,8 +101,8 @@ export default function Home() {
 <div className='px-5'>
 <div className="flex justify-center items-center min-h-screen">
     <div
-      className=" text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"style={{background:'#4784d4'}}
-      style={{ width: "200px" }}
+      className=" text-white text-center mt-5 mb-3 py-2 rounded-5 mx-auto d-flex align-items-center justify-content-center"style={{background:'#4784d4', width: "200px"}}
+
     >
       <p className="mb-0">Categories</p>
     </div>

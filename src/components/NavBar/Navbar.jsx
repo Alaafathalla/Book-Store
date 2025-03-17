@@ -92,10 +92,10 @@ export default function Navbar() {
               </li>
             </ul>
             <div className="d-flex">
-              <Link className="btn btn-outline-primary me-2" to="/login">
+              <Link className="btn btnnav  me-2" style={{border:'2px solid #4784d4 '}} to="/login">
                 Login
               </Link>
-              <Link className="btn btn-primary" to="/register">
+              <Link className="btn " style={{background:'#4784d4' }} to="/register">
                 Register
               </Link>
             </div>

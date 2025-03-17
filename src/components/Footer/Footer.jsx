@@ -26,7 +26,7 @@ export default function Footer() {
                 placeholder="Enter your email"
                 aria-label="Subscribe"
               />
-              <button className="btn btn-primary rounded-5 d-flex align-items-center">
+              <button className="btn  rounded-5 d-flex align-items-center" style={{background:'#4784d4' ,color:'white'}}>
                 <FaEnvelope className="me-1" /> Subscribe
               </button>
             </form>

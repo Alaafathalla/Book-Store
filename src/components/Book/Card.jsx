@@ -16,7 +16,7 @@ export default function Card({ id, title, author, image, price, rating }) {
         <p className="card-text"><strong>Price:</strong> {price}</p>
         <p className="card-text"><strong>Rating:</strong> {rating}</p>
 
-        <Link to={`/books/${id}`} className="btn btn-primary mt-auto w-100">
+        <Link to={`/books/${id}`} className="btn  mt-auto w-100" style={{background:'#4784d4'}}>
           View Details
         </Link>
       </div>

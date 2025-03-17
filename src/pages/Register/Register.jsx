@@ -76,7 +76,7 @@ export default function Register() {
 
           {/* Register Button */}
           <div className="d-grid">
-            <button type="submit" className="btn btn-primary rounded-pill">Sign Up</button>
+            <button type="submit" style={{background:'#4784d4'}} className="btn rounded-pill">Sign Up</button>
           </div>
         </form>
 
